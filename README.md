@@ -172,7 +172,6 @@ time-master/
 │   │   ├── users/             # Пользователи
 │   │   ├── projects/          # Проекты
 │   │   ├── tasks/             # Задачи
-│   │   ├── time-entries/      # Таймер
 │   │   ├── notes/             # Заметки
 │   │   ├── reports/           # Отчёты
 │   │   ├── comments/          # Комментарии
