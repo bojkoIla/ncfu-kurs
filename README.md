@@ -96,13 +96,6 @@ npm run dev         # http://localhost:5173
 
 **Параметры фильтрации GET /tasks:** project, status, priority
 
-### Таймер
-
-| Метод | Путь | Описание |
-|-------|------|----------|
-| POST | /time-entries/start | Запустить таймер |
-| POST | /time-entries/stop | Остановить таймер |
-| GET | /time-entries/task/{taskId} | Временные записи |
 
 ### Заметки
 
