@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-sidebar: #2c3e50;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --border: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --hover: #f0f0f0;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --primary: #007bff;
+  --input-bg: #ffffff;
+  --input-border: #ddd;
+  --input-text: #333333;
+  --table-header: #f8f9fa;
+  --table-border: #ddd;
+  --label-color: #333333;
+  --card-bg: #ffffff;
+  --card-text: #333333;
+  --card-border: #ddd;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-card: #1f2a48;
+  --bg-sidebar: #0f3460;
+  --text-primary: #eeeeee;
+  --text-secondary: #bbbbbb;
+  --text-muted: #888888;
+  --border: #2a3a5c;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --hover: #2a3a5c;
+  --input-bg: #1f2a48;
+  --input-border: #2a3a5c;
+  --input-text: #eeeeee;
+  --table-header: #16213e;
+  --table-border: #2a3a5c;
+  --label-color: #eeeeee;
+  --card-bg: #1f2a48;
+  --card-text: #eeeeee;
+  --card-border: #2a3a5c;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+input, select, textarea {
+  background-color: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border: 1px solid var(--input-border) !important;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary) !important;
+}
+
+
+label {
+  color: var(--label-color);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+
+p {
+  color: var(--text-primary);
+}
+
+
+.project-card, .task-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--card-text);
+}
+
+
+table {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--table-header);
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--table-border);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid var(--table-border);
+  padding: 0.75rem;
+  color: var(--text-primary);
+}
+
+
+.modal-content {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+
+.react-calendar {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.react-calendar__tile {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+
+.react-calendar__tile:enabled:hover {
+  background-color: var(--hover) !important;
+}
+
+.react-calendar__navigation button {
+  color: var(--text-primary) !important;
+  background: none;
+}
+
+.react-calendar__tile--active {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.react-calendar__tile--now {
+  background: var(--warning) !important;
+  color: #333 !important;
+}
+
+
+[data-theme="dark"] .gojuRi {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  body {
+    padding-top: 60px;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
